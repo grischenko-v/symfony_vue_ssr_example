@@ -1,0 +1,6 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+app_ssr:
+    path: /ssr/example
+    controller: App\Controller\SSRController::number

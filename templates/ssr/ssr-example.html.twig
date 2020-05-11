@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home page{% endblock %}
+
+{% block body %}
+    {{ test | raw }}
+{% endblock %}
+
+{% block javascripts %}
+
+<script>
+    // Data for component init. Vue do it in same way(?!)
+    // https://stackoverflow.com/questions/42586666/why-is-the-server-side-rendered-content-replaced-by-vue
+    window.__INITIAL_STATE__ = {
+        title: '{{title}}'
+    }
+</script>
+<script src="/dist/build.js"></script>
+{% endblock %}
