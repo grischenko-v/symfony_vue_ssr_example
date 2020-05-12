@@ -1,4 +1,4 @@
-### Example SSR VUE
+### Symfony VueJS SSR example
 
 build vue
 
