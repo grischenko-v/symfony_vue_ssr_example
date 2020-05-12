@@ -6,15 +6,14 @@ const app = bundle.default({
 });
 
 app.then(app => {
-		renderer.renderToString(app, function (err, html) {
-			if (err) {
-				console.log(err);
-			}
-			// see PHP
-			dispatch(html);
-		})
-	}
-);
+	renderer.renderToString(app, function (err, html) {
+		if (err) {
+			console.log(err);
+		}
+		// see PHP
+		dispatch(html);
+	})
+});
 
 
 

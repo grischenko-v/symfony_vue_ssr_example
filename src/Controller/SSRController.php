@@ -18,8 +18,9 @@ class SSRController extends AbstractController
 
 	public function number()
 	{
-		$number = random_int(0, 100);
+		// path to local nodeJS
 		$this->nodePath = '/usr/local/bin/node';
+		// path to temp file for execute node
 		$this->tempPath = __DIR__.'/../../public/';
 
 		$engine = new Node($this->nodePath, $this->tempPath);
